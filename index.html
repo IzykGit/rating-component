@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main">
+    <div class="rating-container">
+      <img src="./images/icon-star.svg" alt="Star" class="star"/>
+
+      <div class="text-container">
+        <p class="question">How did we do?</p>
+        <p class="description">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      </div>
+
+      <ul class="button-list">
+        <li class="rating" value="1">1</li>
+        <li class="rating" value="2">2</li>
+        <li class="rating" value="3">3</li>
+        <li class="rating" value="4">4</li>
+        <li class="rating" value="5">5</li>
+      </ul>
+      
+      <button id="submit" class="submit">SUBMIT</button>
+    </div>
+
+    <div class="response-screen">
+      <img src="./images/illustration-thank-you.svg" alt="Thank You!" class="phone-result"/>
+
+      <div class="text-container">
+        <div class="rating-display-container">
+          <p class="display-rating">You Selected 4 out of 5</p>
+        </div>
+
+        <p class="response">Thank You</p>
+        <p class="response-description">  We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
+
+  
+  <script src="./script.js"></script>
+</body>
+</html>
