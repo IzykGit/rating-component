@@ -4,6 +4,8 @@ const ratingScreen = document.querySelector('.rating-container')
 const responseScreen = document.querySelector('.response-screen')
 const submitBtn = document.getElementById('submit')
 
+const displayRating = document.querySelector('display-rating')
+
 let rateValue;
 
 ratings.forEach(rating => {
@@ -31,8 +33,9 @@ ratings.forEach(rating => {
 submitBtn.addEventListener("click", () => {
     if(rateValue > 0) {
         ratingScreen.classList.add("hide-container")
+        responseScreen.classList.remove("response-screen")
         responseScreen.classList.add("show-response")
-
+        displayRating.innerHTML = `You selected ${rateValue} out of 5`
     }
 })
 
