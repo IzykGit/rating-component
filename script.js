@@ -4,7 +4,7 @@ const ratingScreen = document.querySelector('.rating-container')
 const responseScreen = document.querySelector('.response-screen')
 const submitBtn = document.getElementById('submit')
 
-const displayRating = document.querySelector('display-rating')
+const displayRating = document.querySelector('.display-rating')
 
 let rateValue;
 
@@ -22,11 +22,6 @@ ratings.forEach(rating => {
             rateValue = rating.value
             console.log(rateValue)
         } 
-        else {
-            rating.classList.add('rating')
-            rating.classList.remove('rating-selected')
-            console.log(rating.classList)
-        }
     })
 })
 
